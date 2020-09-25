@@ -1,0 +1,49 @@
+html {
+    background: url(music2.jpg) bottom center;
+}
+
+kbd {
+    display: block;
+    font-size: 4rem;
+}
+
+span {
+    font-size: .7rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ae6348;
+}
+
+.keys {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100%;
+    color: white;
+    margin-top: 300px;
+}
+
+.key {
+    align-items: center;
+    text-align: center;
+    transition: all 0.07s;
+    border: solid white;
+    border-radius:  5px;
+    height: 9   0px;
+    width: 70px;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ae6348;
+    box-shadow: 0 0 10px #ae6348;
+}
+
+
+@media all and (max-width: 768px) {
+    .keys {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
